@@ -1,0 +1,52 @@
+import com.chrynan.paginate.buildSrc.LibraryConstants
+
+apply plugin: "kotlin-multiplatform"
+apply plugin: "kotlinx-serialization"
+
+group LibraryConstants.group
+version LibraryConstants.versionName
+
+kotlin {
+    targets {
+        jvm()
+        js()
+        ios()
+    }
+    sourceSets {
+        all {
+            languageSettings.useExperimentalAnnotation("kotlin.RequiresOptIn")
+        }
+        commonMain {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib-common"
+
+                // Kotlinx Coroutines
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
+            }
+        }
+    }
+}
+
+configurations {
+    compileClasspath
+}
+
+publishing {
+    publications {
+        kotlinMultiplatform {
+            artifactId = "paginate-core"
+        }
+        jvm {
+            artifactId = "paginate-core-jvm"
+        }
+        js {
+            artifactId = "paginate-core-js"
+        }
+        iosArm64 {
+            artifactId = "paginate-core-ios-arm64"
+        }
+        iosX64 {
+            artifactId = "paginate-core-ios-x64"
+        }
+    }
+}

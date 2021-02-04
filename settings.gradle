@@ -1,0 +1,5 @@
+rootProject.name = "paginate"
+
+include ":paginate-core"
+
+enableFeaturePreview("GRADLE_METADATA")
