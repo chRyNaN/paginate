@@ -2,6 +2,7 @@ import com.chrynan.paginate.buildSrc.LibraryConstants
 
 apply plugin: "kotlin-multiplatform"
 apply plugin: "kotlinx-serialization"
+apply plugin: "org.jetbrains.dokka"
 
 group LibraryConstants.group
 version LibraryConstants.versionName
@@ -49,4 +50,9 @@ publishing {
             artifactId = "paginate-core-ios-x64"
         }
     }
+}
+
+// Documentation
+tasks.named("dokkaGfm") {
+    outputDirectory.set(file("${projectDir.path}/docs"))
 }

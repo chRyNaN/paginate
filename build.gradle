@@ -13,12 +13,15 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.21"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:1.4.20"
         classpath "digital.wup:android-maven-publish:3.6.2"
         classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4"
         classpath "org.jetbrains.kotlin:kotlin-serialization:1.4.21"
         classpath "com.squareup.sqldelight:gradle-plugin:1.4.3"
     }
 }
+
+apply plugin: "org.jetbrains.dokka"
 
 allprojects {
     repositories {
@@ -75,4 +78,9 @@ subprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+// Documentation
+tasks.dokkaGfmMultiModule.configure {
+    outputDirectory.set(file("${projectDir.path}/docs"))
 }

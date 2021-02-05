@@ -83,6 +83,10 @@ repositories {
 implementation "com.chrynan.paginate:paginate-core:$VERSION"
 ```
 
+## Documentation
+
+Markdown Documentation is available in the [docs](/docs) folder.
+
 ## License
 
 ```
