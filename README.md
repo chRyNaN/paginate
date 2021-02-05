@@ -2,6 +2,7 @@
 
 A Kotlin Multi-platform pagination repository abstraction library. <br>
 <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/chRyNaN/paginate">
+<a href="https://bintray.com/chrynan/chrynan/paginate/0.1.0/link"><img src="https://api.bintray.com/packages/chrynan/chrynan/paginate/images/download.svg?version=0.1.0"/></a>
 
 ## Using the library
 
