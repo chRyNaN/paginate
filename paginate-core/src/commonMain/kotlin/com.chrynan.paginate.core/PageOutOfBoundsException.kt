@@ -22,4 +22,6 @@ class PageOutOfBoundsException : RuntimeException {
         minIndex: Int,
         maxIndex: Int
     ) : super("Index $index is not within the bounds $minIndex to $maxIndex.")
+
+    companion object
 }

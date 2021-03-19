@@ -27,4 +27,7 @@ data class PageInfo<K : Any>(
     @SerialName(value = "has_next_page") val hasNextPage: Boolean = false,
     @SerialName(value = "first_key") val firstKey: K? = null,
     @SerialName(value = "last_key") val lastKey: K? = null
-)
+) {
+
+    companion object
+}

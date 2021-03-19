@@ -14,4 +14,7 @@ import kotlinx.serialization.Serializable
 data class PagedResult<T : Any, K : Any>(
     @SerialName(value = "info") val info: PageInfo<K>,
     @SerialName(value = "items") val items: List<T> = emptyList()
-)
+) {
+
+    companion object
+}

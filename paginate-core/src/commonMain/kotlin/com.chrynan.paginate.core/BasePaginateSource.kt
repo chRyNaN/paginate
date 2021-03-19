@@ -133,4 +133,6 @@ abstract class BasePaginateSource<T : Any, K : Any> : PaginateRepository<T, K> {
             .sortedBy { it.key }
             .map { it.value }
     }
+
+    companion object
 }
