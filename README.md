@@ -1,8 +1,7 @@
 # paginate
 
-A Kotlin Multi-platform pagination repository abstraction library. <br>
+A Kotlin Multi-platform pagination repository abstraction library. <br/>
 <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/chRyNaN/paginate">
-<a href="https://bintray.com/chrynan/chrynan/paginate/0.1.0/link"><img src="https://api.bintray.com/packages/chrynan/chrynan/paginate/images/download.svg?version=0.1.0"/></a>
 
 ## Using the library
 
@@ -66,16 +65,15 @@ val previousPage = userPaginateRepository.previous()
 
 ## Building the library
 
-The library is provided through [Bintray](https://bintray.com/). Checkout
-the [releases page](https://github.com/chRyNaN/paginate/releases) to get the latest version.
+The library is provided through [repsy](https://repsy.io). Checkout
+the [releases page](https://github.com/chRyNaN/paginate/releases) to get the latest version. <br/>
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/chRyNaN/paginate">
 
 ### Repository
 
 ```groovy
 repositories {
-    maven {
-        url = uri("https://dl.bintray.com/chrynan/chrynan")
-    }
+    maven { url = "https://repo.repsy.io/mvn/chrynan/public" }
 }
 ```
 
