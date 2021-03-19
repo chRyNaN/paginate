@@ -11,7 +11,7 @@ import kotlinx.serialization.Serializable
  * @property [items] The [List] of [T] items for the resulting loaded page.
  */
 @Serializable
-data class PagedResult<T : Any, K : Any>(
+data class PagedResult<K : Any, T : Any>(
     @SerialName(value = "info") val info: PageInfo<K>,
     @SerialName(value = "items") val items: List<T> = emptyList()
 ) {

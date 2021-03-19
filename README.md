@@ -16,14 +16,14 @@ data class User(
     val created: DateTimeString
 )
 
-class UserPaginateRepository @Inject constructor(private val api: UserApi) : BasePaginateSource<User, String>() {
+class UserPaginateRepository @Inject constructor(private val api: UserApi) : BasePaginateSource<String, User>() {
 
     override suspend fun fetch(
         count: Int,
         key: String?,
         direction: PageDirection,
         currentPageCount: Int
-    ): PagedResult<User, String> {
+    ): PagedResult<String, User> {
         val users = if (direction == PageDirection.AFTER) {
             api.loadUsers(after = key, count = count)
         } else {

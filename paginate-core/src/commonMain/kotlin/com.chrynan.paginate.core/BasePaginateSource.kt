@@ -9,25 +9,25 @@ import kotlinx.coroutines.flow.*
  * A base implementation of the [PaginateRepository] interface. This abstract class provides most of the implementation
  * of the [PaginateRepository] interface leaving only the [fetch] function to be implemented by subclasses.
  */
-abstract class BasePaginateSource<T : Any, K : Any> : PaginateRepository<T, K> {
+abstract class BasePaginateSource<K : Any, T : Any> : PaginateRepository<K, T> {
 
-    override var currentPage: PagedResult<T, K>? = null
+    override var currentPage: PagedResult<K, T>? = null
         protected set
 
     /**
      * The [MutableStateFlow] used for the [loadPages] function.
      */
-    protected val pageStateFlow = MutableStateFlow<PagedResult<T, K>?>(null)
+    protected val pageStateFlow = MutableStateFlow<PagedResult<K, T>?>(null)
 
     /**
      * The [MutableStateFlow] used for the [loadAllPages] function.
      */
-    protected val allPagesStateFlow = MutableStateFlow<List<PagedResult<T, K>>?>(null)
+    protected val allPagesStateFlow = MutableStateFlow<List<PagedResult<K, T>>?>(null)
 
     /**
      * A [MutableMap] of all of the currently loaded items.
      */
-    protected val pages = mutableMapOf<Int, PagedResult<T, K>>()
+    protected val pages = mutableMapOf<Int, PagedResult<K, T>>()
 
     /**
      * Retrieves the [PagedResult] using the provided [count], [key], [direction], and [currentPageCount] parameters.
@@ -60,9 +60,9 @@ abstract class BasePaginateSource<T : Any, K : Any> : PaginateRepository<T, K> {
      *
      * @param [currentPageCount] The amount of pages already loaded for this [PaginateRepository].
      */
-    abstract suspend fun fetch(count: Int, key: K?, direction: PageDirection, currentPageCount: Int): PagedResult<T, K>
+    abstract suspend fun fetch(count: Int, key: K?, direction: PageDirection, currentPageCount: Int): PagedResult<K, T>
 
-    override fun loadPages(count: Int, key: K?, direction: PageDirection): Flow<PagedResult<T, K>> =
+    override fun loadPages(count: Int, key: K?, direction: PageDirection): Flow<PagedResult<K, T>> =
         pageStateFlow.asSharedFlow()
             .onSubscription {
                 if (pageStateFlow.value == null) {
@@ -71,7 +71,7 @@ abstract class BasePaginateSource<T : Any, K : Any> : PaginateRepository<T, K> {
             }
             .filterNotNull()
 
-    override fun loadAllPages(count: Int, key: K?, direction: PageDirection): Flow<List<PagedResult<T, K>>> =
+    override fun loadAllPages(count: Int, key: K?, direction: PageDirection): Flow<List<PagedResult<K, T>>> =
         allPagesStateFlow.asSharedFlow()
             .onSubscription {
                 if (allPagesStateFlow.value == null) {
@@ -80,7 +80,7 @@ abstract class BasePaginateSource<T : Any, K : Any> : PaginateRepository<T, K> {
             }
             .filterNotNull()
 
-    override suspend fun loadSinglePage(count: Int, key: K?, direction: PageDirection): PagedResult<T, K> {
+    override suspend fun loadSinglePage(count: Int, key: K?, direction: PageDirection): PagedResult<K, T> {
         val result = fetch(count = count, key = key, direction = direction, currentPageCount = pages.size)
 
         dispatchResult(result)
@@ -88,7 +88,7 @@ abstract class BasePaginateSource<T : Any, K : Any> : PaginateRepository<T, K> {
         return result
     }
 
-    override suspend fun previous(count: Int): PagedResult<T, K> {
+    override suspend fun previous(count: Int): PagedResult<K, T> {
         // We can only throw an exception if we have a current page and it's PageInfo.hasPreviousPage value was
         // explicitly set to false. Otherwise we leave it up to the fetch function to handle whether there are previous
         // pages.
@@ -99,7 +99,7 @@ abstract class BasePaginateSource<T : Any, K : Any> : PaginateRepository<T, K> {
         return loadSinglePage(count = count, key = key, direction = PageDirection.BEFORE)
     }
 
-    override suspend fun next(count: Int): PagedResult<T, K> {
+    override suspend fun next(count: Int): PagedResult<K, T> {
         // We can only throw an exception if we have a current page and it's PageInfo.hasNextPage value was
         // explicitly set to false. Otherwise we leave it up to the fetch function to handle whether there are next
         // pages.
@@ -122,7 +122,7 @@ abstract class BasePaginateSource<T : Any, K : Any> : PaginateRepository<T, K> {
     }
 
     @Suppress("RedundantSuspendModifier")
-    private suspend fun dispatchResult(result: PagedResult<T, K>) {
+    private suspend fun dispatchResult(result: PagedResult<K, T>) {
         currentPage = result
 
         pageStateFlow.value = result

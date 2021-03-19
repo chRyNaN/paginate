@@ -7,12 +7,12 @@ import kotlinx.coroutines.flow.SharedFlow
  * An interface representing a stateful repository of data that provides a way to load a possibly large data set in
  * smaller [PagedResult] sections, rather than loading the entire data set at once.
  */
-interface PaginateRepository<T : Any, K : Any> {
+interface PaginateRepository<K : Any, T : Any> {
 
     /**
      * The current, or last loaded, data set section. A value of null indicates that there are no pages loaded.
      */
-    val currentPage: PagedResult<T, K>?
+    val currentPage: PagedResult<K, T>?
 
     /**
      * Retrieves a [Flow] of [PagedResult]s starting with any previously loaded [PagedResult]s, followed by the
@@ -44,7 +44,7 @@ interface PaginateRepository<T : Any, K : Any> {
         count: Int = DEFAULT_LOAD_COUNT,
         key: K? = null,
         direction: PageDirection = PageDirection.AFTER
-    ): Flow<PagedResult<T, K>>
+    ): Flow<PagedResult<K, T>>
 
     /**
      * Retrieves a [Flow] of a [List] of [PagedResult]s starting with any previously loaded [PagedResult]s, followed by
@@ -76,7 +76,7 @@ interface PaginateRepository<T : Any, K : Any> {
         count: Int = DEFAULT_LOAD_COUNT,
         key: K? = null,
         direction: PageDirection = PageDirection.AFTER
-    ): Flow<List<PagedResult<T, K>>>
+    ): Flow<List<PagedResult<K, T>>>
 
     /**
      * Retrieves a [PagedResult] using the provided [count], [key], and [direction] values, or throws a
@@ -97,7 +97,7 @@ interface PaginateRepository<T : Any, K : Any> {
         count: Int = DEFAULT_LOAD_COUNT,
         key: K? = null,
         direction: PageDirection = PageDirection.AFTER
-    ): PagedResult<T, K>
+    ): PagedResult<K, T>
 
     /**
      * Retrieves the previous [PagedResult] from the [currentPage] using the provided [count] value, or throws a
@@ -110,7 +110,7 @@ interface PaginateRepository<T : Any, K : Any> {
      *
      * @see [next]
      */
-    suspend fun previous(count: Int = DEFAULT_LOAD_COUNT): PagedResult<T, K>
+    suspend fun previous(count: Int = DEFAULT_LOAD_COUNT): PagedResult<K, T>
 
     /**
      * Retrieves the next [PagedResult] from the [currentPage] using the provided [count] value, or throws a
@@ -123,7 +123,7 @@ interface PaginateRepository<T : Any, K : Any> {
      *
      * @see [previous]
      */
-    suspend fun next(count: Int = DEFAULT_LOAD_COUNT): PagedResult<T, K>
+    suspend fun next(count: Int = DEFAULT_LOAD_COUNT): PagedResult<K, T>
 
     /**
      * Resets this stateful repository back to it's original state before calling any of the functions to load data.

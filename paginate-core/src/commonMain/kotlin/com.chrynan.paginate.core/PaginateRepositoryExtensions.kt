@@ -13,7 +13,7 @@ import kotlinx.coroutines.flow.onStart
  * @see [PaginateRepository.loadPages]
  * @see [PagedResult.items]
  */
-fun <T : Any, K : Any> PaginateRepository<T, K>.loadPageItems(
+fun <K : Any, T : Any> PaginateRepository<K, T>.loadPageItems(
     count: Int = PaginateRepository.DEFAULT_LOAD_COUNT,
     key: K? = null,
     direction: PageDirection = PageDirection.AFTER
@@ -31,7 +31,7 @@ fun <T : Any, K : Any> PaginateRepository<T, K>.loadPageItems(
  * @see [PaginateRepository.loadAllPages]
  * @see [PagedResult.items]
  */
-fun <T : Any, K : Any> PaginateRepository<T, K>.loadAllPagesItems(
+fun <K : Any, T : Any> PaginateRepository<K, T>.loadAllPagesItems(
     count: Int = PaginateRepository.DEFAULT_LOAD_COUNT,
     key: K? = null,
     direction: PageDirection = PageDirection.AFTER
@@ -53,7 +53,7 @@ fun <T : Any, K : Any> PaginateRepository<T, K>.loadAllPagesItems(
  * @see [PaginateRepository.reset]
  * @see [PaginateRepository.loadPages]
  */
-fun <T : Any, K : Any> PaginateRepository<T, K>.refreshPages(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): Flow<PagedResult<T, K>> =
+fun <K : Any, T : Any> PaginateRepository<K, T>.refreshPages(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): Flow<PagedResult<K, T>> =
     loadPages(count = count)
         .onStart { reset() }
 
@@ -64,7 +64,7 @@ fun <T : Any, K : Any> PaginateRepository<T, K>.refreshPages(count: Int = Pagina
  * @see [PaginateRepository.reset]
  * @see [PaginateRepository.loadAllPages]
  */
-fun <T : Any, K : Any> PaginateRepository<T, K>.refreshAllPages(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): Flow<List<PagedResult<T, K>>> =
+fun <K : Any, T : Any> PaginateRepository<K, T>.refreshAllPages(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): Flow<List<PagedResult<K, T>>> =
     loadAllPages(count = count)
         .onStart { reset() }
 
@@ -75,7 +75,7 @@ fun <T : Any, K : Any> PaginateRepository<T, K>.refreshAllPages(count: Int = Pag
  * @see [PaginateRepository.reset]
  * @see [PaginateRepository.loadPageItems]
  */
-fun <T : Any, K : Any> PaginateRepository<T, K>.refreshPageItems(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): Flow<List<T>> =
+fun <K : Any, T : Any> PaginateRepository<K, T>.refreshPageItems(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): Flow<List<T>> =
     loadPageItems(count = count)
         .onStart { reset() }
 
@@ -86,7 +86,7 @@ fun <T : Any, K : Any> PaginateRepository<T, K>.refreshPageItems(count: Int = Pa
  * @see [PaginateRepository.reset]
  * @see [PaginateRepository.loadAllPagesItems]
  */
-fun <T : Any, K : Any> PaginateRepository<T, K>.refreshAllPagesItems(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): Flow<List<T>> =
+fun <K : Any, T : Any> PaginateRepository<K, T>.refreshAllPagesItems(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): Flow<List<T>> =
     loadAllPagesItems(count = count)
         .onStart { reset() }
 
@@ -97,11 +97,11 @@ fun <T : Any, K : Any> PaginateRepository<T, K>.refreshAllPagesItems(count: Int 
  * @see [PaginateRepository.loadSinglePage]
  * @see [PageOutOfBoundsException]
  */
-suspend fun <T : Any, K : Any> PaginateRepository<T, K>.loadSinglePageOrNull(
+suspend fun <K : Any, T : Any> PaginateRepository<K, T>.loadSinglePageOrNull(
     count: Int = PaginateRepository.DEFAULT_LOAD_COUNT,
     key: K? = null,
     direction: PageDirection = PageDirection.AFTER
-): PagedResult<T, K>? =
+): PagedResult<K, T>? =
     try {
         loadSinglePage(count = count, key = key, direction = direction)
     } catch (exception: PageOutOfBoundsException) {
@@ -115,7 +115,7 @@ suspend fun <T : Any, K : Any> PaginateRepository<T, K>.loadSinglePageOrNull(
  * @see [PaginateRepository.previous]
  * @see [PageOutOfBoundsException]
  */
-suspend fun <T : Any, K : Any> PaginateRepository<T, K>.nextOrNull(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): PagedResult<T, K>? =
+suspend fun <K : Any, T : Any> PaginateRepository<K, T>.nextOrNull(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): PagedResult<K, T>? =
     try {
         next(count = count)
     } catch (exception: PageOutOfBoundsException) {
@@ -129,7 +129,7 @@ suspend fun <T : Any, K : Any> PaginateRepository<T, K>.nextOrNull(count: Int = 
  * @see [PaginateRepository.next]
  * @see [PageOutOfBoundsException]
  */
-suspend fun <T : Any, K : Any> PaginateRepository<T, K>.previousOrNull(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): PagedResult<T, K>? =
+suspend fun <K : Any, T : Any> PaginateRepository<K, T>.previousOrNull(count: Int = PaginateRepository.DEFAULT_LOAD_COUNT): PagedResult<K, T>? =
     try {
         previous(count = count)
     } catch (exception: PageOutOfBoundsException) {
