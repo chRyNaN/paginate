@@ -1,5 +1,8 @@
 package com.chrynan.paginate.core
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
 /**
  * Represents information about a particular page loaded from a [PaginateRepository].
  *
@@ -17,10 +20,11 @@ package com.chrynan.paginate.core
  * @property [lastKey] The key value of the last item of this page. This should correspond to the last item in the
  * [PagedResult.items] value. This should be null if there are no items on this page.
  */
+@Serializable
 data class PageInfo<K : Any>(
-    val index: Int,
-    val hasPreviousPage: Boolean = false,
-    val hasNextPage: Boolean = false,
-    val firstKey: K? = null,
-    val lastKey: K? = null
+    @SerialName(value = "index") val index: Int,
+    @SerialName(value = "has_previous_page") val hasPreviousPage: Boolean = false,
+    @SerialName(value = "has_next_page") val hasNextPage: Boolean = false,
+    @SerialName(value = "first_key") val firstKey: K? = null,
+    @SerialName(value = "last_key") val lastKey: K? = null
 )

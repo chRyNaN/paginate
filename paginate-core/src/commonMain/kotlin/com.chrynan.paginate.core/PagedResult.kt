@@ -1,5 +1,8 @@
 package com.chrynan.paginate.core
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
 /**
  * Represents a result from loading data from a [PaginateRepository].
  *
@@ -7,7 +10,8 @@ package com.chrynan.paginate.core
  *
  * @property [items] The [List] of [T] items for the resulting loaded page.
  */
+@Serializable
 data class PagedResult<T : Any, K : Any>(
-    val info: PageInfo<K>,
-    val items: List<T> = emptyList()
+    @SerialName(value = "info") val info: PageInfo<K>,
+    @SerialName(value = "items") val items: List<T> = emptyList()
 )
