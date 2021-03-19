@@ -1,4 +1,4 @@
-//[paginate-core](../../index.md)/[com.chrynan.paginate.core](../index.md)/[BasePaginateSource](index.md)/[reset](reset.md)
+//[paginate-core](../../../index.md)/[com.chrynan.paginate.core](../index.md)/[BasePaginateSource](index.md)/[reset](reset.md)
 
 
 

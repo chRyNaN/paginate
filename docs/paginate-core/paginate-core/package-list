@@ -1,5 +1,64 @@
 $dokka.format:gfm-v1
 $dokka.linkExtension:md
-
+$dokka.location:com.chrynan.paginate.core////PointingToDeclaration/paginate-core/com.chrynan.paginate.core/index.md
+$dokka.location:com.chrynan.paginate.core//loadAllPagesItems/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/load-all-pages-items.md
+$dokka.location:com.chrynan.paginate.core//loadPageItems/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/load-page-items.md
+$dokka.location:com.chrynan.paginate.core//loadSinglePageOrNull/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/load-single-page-or-null.md
+$dokka.location:com.chrynan.paginate.core//nextOrNull/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/next-or-null.md
+$dokka.location:com.chrynan.paginate.core//previousOrNull/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/previous-or-null.md
+$dokka.location:com.chrynan.paginate.core//refreshAllPages/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/refresh-all-pages.md
+$dokka.location:com.chrynan.paginate.core//refreshAllPagesItems/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/refresh-all-pages-items.md
+$dokka.location:com.chrynan.paginate.core//refreshPageItems/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/refresh-page-items.md
+$dokka.location:com.chrynan.paginate.core//refreshPages/com.chrynan.paginate.core.PaginateRepository[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[kotlin.Any])]#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/refresh-pages.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource.Companion///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/-companion/index.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/index.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/BasePaginateSource/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/-base-paginate-source.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/currentPage/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/current-page.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/fetch/#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/fetch.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/loadAllPages/#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/load-all-pages.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/loadPages/#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/load-pages.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/loadSinglePage/#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/load-single-page.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/next/#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/next.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/previous/#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/previous.md
+$dokka.location:com.chrynan.paginate.core/BasePaginateSource/reset/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-base-paginate-source/reset.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.AFTER///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-a-f-t-e-r/index.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.AFTER/name/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-a-f-t-e-r/name.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.AFTER/ordinal/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-a-f-t-e-r/ordinal.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.AFTER/typeName/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-a-f-t-e-r/type-name.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.BEFORE///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-b-e-f-o-r-e/index.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.BEFORE/name/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-b-e-f-o-r-e/name.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.BEFORE/ordinal/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-b-e-f-o-r-e/ordinal.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.BEFORE/typeName/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-b-e-f-o-r-e/type-name.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.Companion///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-companion/index.md
+$dokka.location:com.chrynan.paginate.core/PageDirection.Companion/getByTypeName/#kotlin.String#kotlin.Boolean/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/-companion/get-by-type-name.md
+$dokka.location:com.chrynan.paginate.core/PageDirection///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/index.md
+$dokka.location:com.chrynan.paginate.core/PageDirection/typeName/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-direction/type-name.md
+$dokka.location:com.chrynan.paginate.core/PageInfo.Companion///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-info/-companion/index.md
+$dokka.location:com.chrynan.paginate.core/PageInfo///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-info/index.md
+$dokka.location:com.chrynan.paginate.core/PageInfo/PageInfo/#kotlin.Int#kotlin.Boolean#kotlin.Boolean#TypeParam(bounds=[kotlin.Any])?#TypeParam(bounds=[kotlin.Any])?/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-info/-page-info.md
+$dokka.location:com.chrynan.paginate.core/PageInfo/firstKey/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-info/first-key.md
+$dokka.location:com.chrynan.paginate.core/PageInfo/hasNextPage/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-info/has-next-page.md
+$dokka.location:com.chrynan.paginate.core/PageInfo/hasPreviousPage/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-info/has-previous-page.md
+$dokka.location:com.chrynan.paginate.core/PageInfo/index/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-info/--index--.md
+$dokka.location:com.chrynan.paginate.core/PageInfo/lastKey/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-info/last-key.md
+$dokka.location:com.chrynan.paginate.core/PageOutOfBoundsException.Companion///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-out-of-bounds-exception/-companion/index.md
+$dokka.location:com.chrynan.paginate.core/PageOutOfBoundsException///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-out-of-bounds-exception/index.md
+$dokka.location:com.chrynan.paginate.core/PageOutOfBoundsException/PageOutOfBoundsException/#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-out-of-bounds-exception/-page-out-of-bounds-exception.md
+$dokka.location:com.chrynan.paginate.core/PageOutOfBoundsException/PageOutOfBoundsException/#kotlin.String?/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-page-out-of-bounds-exception/-page-out-of-bounds-exception.md
+$dokka.location:com.chrynan.paginate.core/PagedResult.Companion///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paged-result/-companion/index.md
+$dokka.location:com.chrynan.paginate.core/PagedResult///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paged-result/index.md
+$dokka.location:com.chrynan.paginate.core/PagedResult/PagedResult/#com.chrynan.paginate.core.PageInfo[TypeParam(bounds=[kotlin.Any])]#kotlin.collections.List[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paged-result/-paged-result.md
+$dokka.location:com.chrynan.paginate.core/PagedResult/info/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paged-result/info.md
+$dokka.location:com.chrynan.paginate.core/PagedResult/items/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paged-result/items.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository.Companion///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/-companion/index.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository.Companion/DEFAULT_LOAD_COUNT/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/-companion/-d-e-f-a-u-l-t_-l-o-a-d_-c-o-u-n-t.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository///PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/index.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository/currentPage/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/current-page.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository/loadAllPages/#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/load-all-pages.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository/loadPages/#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/load-pages.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository/loadSinglePage/#kotlin.Int#TypeParam(bounds=[kotlin.Any])?#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/load-single-page.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository/next/#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/next.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository/previous/#kotlin.Int/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/previous.md
+$dokka.location:com.chrynan.paginate.core/PaginateRepository/reset/#/PointingToDeclaration/paginate-core/com.chrynan.paginate.core/-paginate-repository/reset.md
 com.chrynan.paginate.core
 

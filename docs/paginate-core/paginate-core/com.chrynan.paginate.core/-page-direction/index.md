@@ -1,4 +1,4 @@
-//[paginate-core](../../index.md)/[com.chrynan.paginate.core](../index.md)/[PageDirection](index.md)
+//[paginate-core](../../../index.md)/[com.chrynan.paginate.core](../index.md)/[PageDirection](index.md)
 
 
 
@@ -12,26 +12,24 @@ An enum class representing the possible directions to load data in a [PaginateRe
 
 ## Entries  
   
-|  Name|  Summary| 
+| | |
 |---|---|
-| <a name="com.chrynan.paginate.core/PageDirection.BEFORE///PointingToDeclaration/"></a>[BEFORE](-b-e-f-o-r-e/index.md)| <a name="com.chrynan.paginate.core/PageDirection.BEFORE///PointingToDeclaration/"></a> [common] [BEFORE](-b-e-f-o-r-e/index.md)()  <br>Indicates loading data before the reference key value.   <br>
-| <a name="com.chrynan.paginate.core/PageDirection.AFTER///PointingToDeclaration/"></a>[AFTER](-a-f-t-e-r/index.md)| <a name="com.chrynan.paginate.core/PageDirection.AFTER///PointingToDeclaration/"></a> [common] [AFTER](-a-f-t-e-r/index.md)()  <br>Indicates loading data after the reference key value.   <br>
+| <a name="com.chrynan.paginate.core/PageDirection.BEFORE///PointingToDeclaration/"></a>[BEFORE](-b-e-f-o-r-e/index.md)| <a name="com.chrynan.paginate.core/PageDirection.BEFORE///PointingToDeclaration/"></a> [common] [BEFORE](-b-e-f-o-r-e/index.md)(typeName, "before")  <br>Indicates loading data before the reference key value.   <br>|
+| <a name="com.chrynan.paginate.core/PageDirection.AFTER///PointingToDeclaration/"></a>[AFTER](-a-f-t-e-r/index.md)| <a name="com.chrynan.paginate.core/PageDirection.AFTER///PointingToDeclaration/"></a> [common] [AFTER](-a-f-t-e-r/index.md)(typeName, "after")  <br>Indicates loading data after the reference key value.   <br>|
 
 
-## Functions  
+## Types  
   
-|  Name|  Summary| 
+|  Name |  Summary | 
 |---|---|
-| <a name="kotlin/Enum/compareTo/#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/"></a>[compareTo](-a-f-t-e-r/index.md#%5Bkotlin%2FEnum%2FcompareTo%2F%23com.chrynan.paginate.core.PageDirection%2FPointingToDeclaration%2F%5D%2FFunctions%2F-785684615)| <a name="kotlin/Enum/compareTo/#com.chrynan.paginate.core.PageDirection/PointingToDeclaration/"></a>[common]  <br>Content  <br>operator override fun [compareTo](-a-f-t-e-r/index.md#%5Bkotlin%2FEnum%2FcompareTo%2F%23com.chrynan.paginate.core.PageDirection%2FPointingToDeclaration%2F%5D%2FFunctions%2F-785684615)(other: [PageDirection](index.md)): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Enum/equals/#kotlin.Any?/PointingToDeclaration/"></a>[equals](-a-f-t-e-r/index.md#%5Bkotlin%2FEnum%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-785684615)| <a name="kotlin/Enum/equals/#kotlin.Any?/PointingToDeclaration/"></a>[common]  <br>Content  <br>operator override fun [equals](-a-f-t-e-r/index.md#%5Bkotlin%2FEnum%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-785684615)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
-| <a name="kotlin/Enum/hashCode/#/PointingToDeclaration/"></a>[hashCode](-a-f-t-e-r/index.md#%5Bkotlin%2FEnum%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-785684615)| <a name="kotlin/Enum/hashCode/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>override fun [hashCode](-a-f-t-e-r/index.md#%5Bkotlin%2FEnum%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-785684615)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
-| <a name="kotlin/Enum/toString/#/PointingToDeclaration/"></a>[toString](-a-f-t-e-r/index.md#%5Bkotlin%2FEnum%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-785684615)| <a name="kotlin/Enum/toString/#/PointingToDeclaration/"></a>[common]  <br>Content  <br>open override fun [toString](-a-f-t-e-r/index.md#%5Bkotlin%2FEnum%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-785684615)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
+| <a name="com.chrynan.paginate.core/PageDirection.Companion///PointingToDeclaration/"></a>[Companion](-companion/index.md)| <a name="com.chrynan.paginate.core/PageDirection.Companion///PointingToDeclaration/"></a>[common]  <br>Content  <br>object [Companion](-companion/index.md)  <br><br><br>|
 
 
 ## Properties  
   
-|  Name|  Summary| 
+|  Name |  Summary | 
 |---|---|
-| <a name="com.chrynan.paginate.core/PageDirection/name/#/PointingToDeclaration/"></a>[name](index.md#%5Bcom.chrynan.paginate.core%2FPageDirection%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-785684615)| <a name="com.chrynan.paginate.core/PageDirection/name/#/PointingToDeclaration/"></a> [common] val [name](index.md#%5Bcom.chrynan.paginate.core%2FPageDirection%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-785684615): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
-| <a name="com.chrynan.paginate.core/PageDirection/ordinal/#/PointingToDeclaration/"></a>[ordinal](index.md#%5Bcom.chrynan.paginate.core%2FPageDirection%2Fordinal%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-785684615)| <a name="com.chrynan.paginate.core/PageDirection/ordinal/#/PointingToDeclaration/"></a> [common] val [ordinal](index.md#%5Bcom.chrynan.paginate.core%2FPageDirection%2Fordinal%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-785684615): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>
+| <a name="com.chrynan.paginate.core/PageDirection/name/#/PointingToDeclaration/"></a>[name](index.md#%5Bcom.chrynan.paginate.core%2FPageDirection%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-364132079)| <a name="com.chrynan.paginate.core/PageDirection/name/#/PointingToDeclaration/"></a> [common] val [name](index.md#%5Bcom.chrynan.paginate.core%2FPageDirection%2Fname%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-364132079): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>|
+| <a name="com.chrynan.paginate.core/PageDirection/ordinal/#/PointingToDeclaration/"></a>[ordinal](index.md#%5Bcom.chrynan.paginate.core%2FPageDirection%2Fordinal%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-364132079)| <a name="com.chrynan.paginate.core/PageDirection/ordinal/#/PointingToDeclaration/"></a> [common] val [ordinal](index.md#%5Bcom.chrynan.paginate.core%2FPageDirection%2Fordinal%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-364132079): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)   <br>|
+| <a name="com.chrynan.paginate.core/PageDirection/typeName/#/PointingToDeclaration/"></a>[typeName](type-name.md)| <a name="com.chrynan.paginate.core/PageDirection/typeName/#/PointingToDeclaration/"></a> [common] val [typeName](type-name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>|
 

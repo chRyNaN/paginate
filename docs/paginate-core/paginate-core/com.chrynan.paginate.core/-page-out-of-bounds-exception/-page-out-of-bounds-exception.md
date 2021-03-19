@@ -1,4 +1,4 @@
-//[paginate-core](../../index.md)/[com.chrynan.paginate.core](../index.md)/[PageOutOfBoundsException](index.md)/[PageOutOfBoundsException](-page-out-of-bounds-exception.md)
+//[paginate-core](../../../index.md)/[com.chrynan.paginate.core](../index.md)/[PageOutOfBoundsException](index.md)/[PageOutOfBoundsException](-page-out-of-bounds-exception.md)
 
 
 
@@ -9,7 +9,7 @@ fun [PageOutOfBoundsException](-page-out-of-bounds-exception.md)(message: [Strin
 More info  
 
 
-Creates an instance of the [PageOutOfBoundsException](index.md) with the provided error [message](index.md#%5Bcom.chrynan.paginate.core%2FPageOutOfBoundsException%2Fmessage%2F%23%2FPointingToDeclaration%2F%5D%2FProperties%2F-785684615).
+Creates an instance of the [PageOutOfBoundsException](index.md) with the provided error [message](../../../../paginate-core/com.chrynan.paginate.core/-page-out-of-bounds-exception/[60]init[62].md).
 
   
 
@@ -20,7 +20,7 @@ fun [PageOutOfBoundsException](-page-out-of-bounds-exception.md)(index: [Int](ht
 More info  
 
 
-Creates an instance of the [PageOutOfBoundsException](index.md) with the provided index, minIndex, and maxIndex which are used to create an error message.
+Creates an instance of the [PageOutOfBoundsException](index.md) with the provided [index](../../../../paginate-core/com.chrynan.paginate.core/-page-out-of-bounds-exception/[60]init[62].md), [minIndex](../../../../paginate-core/com.chrynan.paginate.core/-page-out-of-bounds-exception/[60]init[62].md), and [maxIndex](../../../../paginate-core/com.chrynan.paginate.core/-page-out-of-bounds-exception/[60]init[62].md) which are used to create an error message.
 
   
 

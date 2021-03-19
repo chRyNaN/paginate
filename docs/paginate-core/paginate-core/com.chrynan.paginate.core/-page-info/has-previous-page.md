@@ -1,4 +1,4 @@
-//[paginate-core](../../index.md)/[com.chrynan.paginate.core](../index.md)/[PageInfo](index.md)/[hasPreviousPage](has-previous-page.md)
+//[paginate-core](../../../index.md)/[com.chrynan.paginate.core](../index.md)/[PageInfo](index.md)/[hasPreviousPage](has-previous-page.md)
 
 
 

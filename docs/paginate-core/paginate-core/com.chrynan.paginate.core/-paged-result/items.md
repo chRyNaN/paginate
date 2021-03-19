@@ -1,4 +1,4 @@
-//[paginate-core](../../index.md)/[com.chrynan.paginate.core](../index.md)/[PagedResult](index.md)/[items](items.md)
+//[paginate-core](../../../index.md)/[com.chrynan.paginate.core](../index.md)/[PagedResult](index.md)/[items](items.md)
 
 
 

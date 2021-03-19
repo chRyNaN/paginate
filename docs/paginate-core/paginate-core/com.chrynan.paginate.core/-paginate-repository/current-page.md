@@ -1,11 +1,11 @@
-//[paginate-core](../../index.md)/[com.chrynan.paginate.core](../index.md)/[PaginateRepository](index.md)/[currentPage](current-page.md)
+//[paginate-core](../../../index.md)/[com.chrynan.paginate.core](../index.md)/[PaginateRepository](index.md)/[currentPage](current-page.md)
 
 
 
 # currentPage  
 [common]  
 Content  
-abstract val [currentPage](current-page.md): [PagedResult](../-paged-result/index.md)<[T](index.md), [K](index.md)>?  
+abstract val [currentPage](current-page.md): [PagedResult](../-paged-result/index.md)<[K](index.md), [T](index.md)>?  
 More info  
 
 

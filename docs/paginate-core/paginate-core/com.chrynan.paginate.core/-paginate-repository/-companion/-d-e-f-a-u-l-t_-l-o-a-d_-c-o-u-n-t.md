@@ -1,4 +1,4 @@
-//[paginate-core](../../../index.md)/[com.chrynan.paginate.core](../../index.md)/[PaginateRepository](../index.md)/[Companion](index.md)/[DEFAULT_LOAD_COUNT](-d-e-f-a-u-l-t_-l-o-a-d_-c-o-u-n-t.md)
+//[paginate-core](../../../../index.md)/[com.chrynan.paginate.core](../../index.md)/[PaginateRepository](../index.md)/[Companion](index.md)/[DEFAULT_LOAD_COUNT](-d-e-f-a-u-l-t_-l-o-a-d_-c-o-u-n-t.md)
 
 
 

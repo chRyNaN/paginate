@@ -1,4 +1,4 @@
-//[paginate-core](../../../index.md)/[com.chrynan.paginate.core](../../index.md)/[PageDirection](../index.md)/[BEFORE](index.md)/[ordinal](ordinal.md)
+//[paginate-core](../../../../index.md)/[com.chrynan.paginate.core](../../index.md)/[PageDirection](../index.md)/[BEFORE](index.md)/[ordinal](ordinal.md)
 
 
 
