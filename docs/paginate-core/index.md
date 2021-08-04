@@ -1,13 +1,9 @@
 //[paginate-core](index.md)
 
+# paginate-core
 
+## Packages
 
-# paginate-core  
-
-
-## Packages  
-  
-|  Name | 
+| Name |
 |---|
-| <a name="com.chrynan.paginate.core////PointingToDeclaration/"></a>[com.chrynan.paginate.core](paginate-core/com.chrynan.paginate.core/index.md)|
-
+| [com.chrynan.paginate.core](paginate-core/com.chrynan.paginate.core/index.md) |

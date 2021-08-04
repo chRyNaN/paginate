@@ -1,11 +1,6 @@
 //[paginate-core](../../../../index.md)/[com.chrynan.paginate.core](../../index.md)/[PageDirection](../index.md)/[AFTER](index.md)/[typeName](type-name.md)
 
+# typeName
 
-
-# typeName  
-[common]  
-Content  
-val [typeName](type-name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  
-
-
-
+[common]\
+val [typeName](type-name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)
