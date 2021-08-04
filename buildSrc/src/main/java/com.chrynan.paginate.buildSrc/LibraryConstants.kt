@@ -11,4 +11,11 @@ object LibraryConstants {
     const val versionDescription = "Pre-release 0.2.0"
     const val license = "Apache-2.0"
     const val vcsUrl = "https://github.com/chRyNaN/paginate.git"
+
+    object Android {
+
+        const val compileSdkVersion = 30
+        const val minSdkVersion = 23
+        const val targetSdkVersion = 29
+    }
 }
