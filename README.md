@@ -71,16 +71,16 @@ the [releases page](https://github.com/chRyNaN/paginate/releases) to get the lat
 
 ### Repository
 
-```groovy
+```kotlin
 repositories {
-    maven { url = "https://repo.repsy.io/mvn/chrynan/public" }
+    maven { url = uri("https://repo.repsy.io/mvn/chrynan/public") }
 }
 ```
 
 ### Dependency
 
-```groovy
-implementation "com.chrynan.paginate:paginate-core:$VERSION"
+```kotlin
+implementation("com.chrynan.paginate:paginate-core:$VERSION")
 ```
 
 ## Documentation
