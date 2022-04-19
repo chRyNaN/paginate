@@ -3,7 +3,7 @@
 # next
 
 [common]\
-open suspend override fun [next](next.md)(count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [PagedResult](../-paged-result/index.md)<[K](index.md), [T](index.md)>
+open suspend override fun [next](next.md)(count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [PagedResult](../-paged-result/index.md)&lt;[K](index.md), [T](index.md)&gt;
 
 Retrieves the next [PagedResult](../-paged-result/index.md) from the [currentPage](current-page.md) using the provided [count](next.md) value, or throws a [PageOutOfBoundsException](../-page-out-of-bounds-exception/index.md) if there is no next page. When the value is retrieved, it will be dispatched to the SharedFlows for all subscribers before being returned.
 

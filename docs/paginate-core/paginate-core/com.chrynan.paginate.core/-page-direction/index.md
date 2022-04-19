@@ -3,7 +3,7 @@
 # PageDirection
 
 [common]\
-enum [PageDirection](index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)<[PageDirection](index.md)> 
+enum [PageDirection](index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[PageDirection](index.md)&gt; 
 
 An enum class representing the possible directions to load data in a [PaginateRepository](../-paginate-repository/index.md) with respect to a reference key value.
 
@@ -11,8 +11,8 @@ An enum class representing the possible directions to load data in a [PaginateRe
 
 | | |
 |---|---|
-| [AFTER](-a-f-t-e-r/index.md) | [common]<br>[AFTER](-a-f-t-e-r/index.md)(typeName, "after")<br>Indicates loading data after the reference key value. |
-| [BEFORE](-b-e-f-o-r-e/index.md) | [common]<br>[BEFORE](-b-e-f-o-r-e/index.md)(typeName, "before")<br>Indicates loading data before the reference key value. |
+| [AFTER](-a-f-t-e-r/index.md) | [common]<br>[AFTER](-a-f-t-e-r/index.md)("after")<br>Indicates loading data after the reference key value. |
+| [BEFORE](-b-e-f-o-r-e/index.md) | [common]<br>[BEFORE](-b-e-f-o-r-e/index.md)("before")<br>Indicates loading data before the reference key value. |
 
 ## Types
 
@@ -24,6 +24,6 @@ An enum class representing the possible directions to load data in a [PaginateRe
 
 | Name | Summary |
 |---|---|
-| [name](index.md#-1971154098%2FProperties%2F-1207083043) | [common]<br>val [name](index.md#-1971154098%2FProperties%2F-1207083043): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [ordinal](index.md#1910434096%2FProperties%2F-1207083043) | [common]<br>val [ordinal](index.md#1910434096%2FProperties%2F-1207083043): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [name](-b-e-f-o-r-e/index.md#-372974862%2FProperties%2F-1207083043) | [common]<br>val [name](-b-e-f-o-r-e/index.md#-372974862%2FProperties%2F-1207083043): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [ordinal](-b-e-f-o-r-e/index.md#-739389684%2FProperties%2F-1207083043) | [common]<br>val [ordinal](-b-e-f-o-r-e/index.md#-739389684%2FProperties%2F-1207083043): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
 | [typeName](type-name.md) | [common]<br>val [typeName](type-name.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |

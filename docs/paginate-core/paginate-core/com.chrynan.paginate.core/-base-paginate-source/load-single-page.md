@@ -3,7 +3,7 @@
 # loadSinglePage
 
 [common]\
-open suspend override fun [loadSinglePage](load-single-page.md)(count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), key: [K](index.md)?, direction: [PageDirection](../-page-direction/index.md)): [PagedResult](../-paged-result/index.md)<[K](index.md), [T](index.md)>
+open suspend override fun [loadSinglePage](load-single-page.md)(count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), key: [K](index.md)?, direction: [PageDirection](../-page-direction/index.md)): [PagedResult](../-paged-result/index.md)&lt;[K](index.md), [T](index.md)&gt;
 
 Retrieves a [PagedResult](../-paged-result/index.md) using the provided [count](load-single-page.md), [key](load-single-page.md), and [direction](load-single-page.md) values, or throws a [PageOutOfBoundsException](../-page-out-of-bounds-exception/index.md) if there are no more pages in the provided [direction](load-single-page.md). When the value is retrieved, it will be dispatched to the SharedFlows for all subscribers before being returned.
 

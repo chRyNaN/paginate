@@ -3,7 +3,7 @@
 # previous
 
 [common]\
-abstract suspend fun [previous](previous.md)(count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = DEFAULT_LOAD_COUNT): [PagedResult](../-paged-result/index.md)<[K](index.md), [T](index.md)>
+abstract suspend fun [previous](previous.md)(count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = DEFAULT_LOAD_COUNT): [PagedResult](../-paged-result/index.md)&lt;[K](index.md), [T](index.md)&gt;
 
 Retrieves the previous [PagedResult](../-paged-result/index.md) from the [currentPage](current-page.md) using the provided [count](previous.md) value, or throws a [PageOutOfBoundsException](../-page-out-of-bounds-exception/index.md) if there is no previous page. When the value is retrieved, it will be dispatched to the SharedFlows for all subscribers before being returned.
 

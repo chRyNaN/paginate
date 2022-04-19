@@ -3,7 +3,7 @@
 # fetch
 
 [common]\
-abstract suspend fun [fetch](fetch.md)(count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), key: [K](index.md)?, direction: [PageDirection](../-page-direction/index.md), currentPageCount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [PagedResult](../-paged-result/index.md)<[K](index.md), [T](index.md)>
+abstract suspend fun [fetch](fetch.md)(count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), key: [K](index.md)?, direction: [PageDirection](../-page-direction/index.md), currentPageCount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [PagedResult](../-paged-result/index.md)&lt;[K](index.md), [T](index.md)&gt;
 
 Retrieves the [PagedResult](../-paged-result/index.md) using the provided [count](fetch.md), [key](fetch.md), [direction](fetch.md), and [currentPageCount](fetch.md) parameters. This abstract function must be implemented by subclasses and connects the underlying data source with this [PaginateRepository](../-paginate-repository/index.md). For instance, a subclass might provide an implementation of this function that loads the data from a REST API using some HTTP Client.
 

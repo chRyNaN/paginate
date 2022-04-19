@@ -3,6 +3,6 @@
 # currentPage
 
 [common]\
-abstract val [currentPage](current-page.md): [PagedResult](../-paged-result/index.md)<[K](index.md), [T](index.md)>?
+abstract val [currentPage](current-page.md): [PagedResult](../-paged-result/index.md)&lt;[K](index.md), [T](index.md)&gt;?
 
 The current, or last loaded, data set section. A value of null indicates that there are no pages loaded.

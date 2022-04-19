@@ -22,13 +22,7 @@ $dokka.location:com.chrynan.paginate.core/BasePaginateSource/next/#kotlin.Int/Po
 $dokka.location:com.chrynan.paginate.core/BasePaginateSource/previous/#kotlin.Int/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-base-paginate-source/previous.md
 $dokka.location:com.chrynan.paginate.core/BasePaginateSource/reset/#/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-base-paginate-source/reset.md
 $dokka.location:com.chrynan.paginate.core/PageDirection.AFTER///PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-a-f-t-e-r/index.md
-$dokka.location:com.chrynan.paginate.core/PageDirection.AFTER/name/#/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-a-f-t-e-r/name.md
-$dokka.location:com.chrynan.paginate.core/PageDirection.AFTER/ordinal/#/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-a-f-t-e-r/ordinal.md
-$dokka.location:com.chrynan.paginate.core/PageDirection.AFTER/typeName/#/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-a-f-t-e-r/type-name.md
 $dokka.location:com.chrynan.paginate.core/PageDirection.BEFORE///PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-b-e-f-o-r-e/index.md
-$dokka.location:com.chrynan.paginate.core/PageDirection.BEFORE/name/#/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-b-e-f-o-r-e/name.md
-$dokka.location:com.chrynan.paginate.core/PageDirection.BEFORE/ordinal/#/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-b-e-f-o-r-e/ordinal.md
-$dokka.location:com.chrynan.paginate.core/PageDirection.BEFORE/typeName/#/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-b-e-f-o-r-e/type-name.md
 $dokka.location:com.chrynan.paginate.core/PageDirection.Companion///PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-companion/index.md
 $dokka.location:com.chrynan.paginate.core/PageDirection.Companion/getByTypeName/#kotlin.String#kotlin.Boolean/PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/-companion/get-by-type-name.md
 $dokka.location:com.chrynan.paginate.core/PageDirection///PointingToDeclaration/paginate-core/paginate-core/com.chrynan.paginate.core/-page-direction/index.md

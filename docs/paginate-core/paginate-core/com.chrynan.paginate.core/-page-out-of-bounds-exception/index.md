@@ -24,5 +24,5 @@ A [RuntimeException](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-runtim
 
 | Name | Summary |
 |---|---|
-| [cause](index.md#718708858%2FProperties%2F-1207083043) | [common]<br>open val [cause](index.md#718708858%2FProperties%2F-1207083043): [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? |
-| [message](index.md#-1840375524%2FProperties%2F-1207083043) | [common]<br>open val [message](index.md#-1840375524%2FProperties%2F-1207083043): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [cause](index.md#-654012527%2FProperties%2F-1207083043) | [common]<br>open val [cause](index.md#-654012527%2FProperties%2F-1207083043): [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)? |
+| [message](index.md#1824300659%2FProperties%2F-1207083043) | [common]<br>open val [message](index.md#1824300659%2FProperties%2F-1207083043): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |

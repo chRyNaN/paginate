@@ -3,4 +3,4 @@
 # info
 
 [common]\
-val [info](info.md): [PageInfo](../-page-info/index.md)<[K](index.md)>
+val [info](info.md): [PageInfo](../-page-info/index.md)&lt;[K](index.md)&gt;
