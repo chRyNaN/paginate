@@ -1,3 +1,3 @@
 rootProject.name = "paginate"
 
-include ":paginate-core"
+include(":paginate-core")

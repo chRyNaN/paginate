@@ -26,3 +26,8 @@ build/
 
 # Mac
 .DS_Store
+
+# Error logs
+**/*.log
+
+kotlin-js-store
